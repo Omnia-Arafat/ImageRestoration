@@ -1,0 +1,193 @@
+/* #home */
+/* dashboard */
+
+/* =======================================home================================================ */
+
+#root{
+    background:  url("../src/assets/Images/2880618.png");
+    position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.robot-image{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 53%;
+}
+
+.welcome-text{
+    color: #F6F5F5;
+  font-size: 3rem;
+  font-style: initial;
+  font-family: initial;
+  display: flex;
+  flex-wrap: wrap;
+  width: 53%;
+  padding: 5%;
+}
+.welcome-text-p2{
+    color: #F6F5F5;
+  font-size: 3rem;
+  font-style: initial;
+  font-family: initial;
+  
+  padding: 5%;
+  position: absolute;
+  top: 10.4%;
+  left: 17%;
+}
+
+.glow-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0048fe; /* Your desired color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #0048fe; /* Add glow effect */
+    transition: text-shadow 0.3s ease; /* Smooth transition for glow effect */
+    position: absolute;
+    top: 74%;
+  left: 27%;
+  }
+  
+  .glow-button:hover {
+    text-shadow: 0 0 20px #20dffe; /* Increase glow on hover */
+  }
+  /* =======================================dashboard============================================== */
+
+.main-dashboard-container{
+    padding: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    height: 86vh;
+    padding: 2.4rem 2rem 0rem 2rem;
+  }
+  
+  .item1, .item2, .item3 {
+  grid-column: 1; /* First column */
+  background-color: #ffff;
+  border-radius: 7px;
+  box-shadow: 1px 1px 14px 0px #7980a0;
+  /* transition: grid-column 2s, grid-row 2s; */
+}
+
+/* 
+.item1:hover, .item2:hover, .item3:hover {
+  position: relative;
+  transform: scale(1.1);
+  transition-timing-function: ease-in-out;
+  grid-column: 2 / span 3; 
+  grid-row: 1 / span 3; 
+} */
+
+  
+  .item4 {
+    grid-column: 2 / span 3; /* Spans three columns from the second column */
+    grid-row: 1 / span 3; /* Spans three rows starting from the first row */
+    background-color: #ffff;
+    border-radius: 7px;
+    box-shadow: 1px 1px 14px 0px #7980a0;
+  }
+
+  .item1{
+    background-image: url('../src/assets/Images/inpaintImagee.png');
+    background-size: cover;
+  }
+  
+  .item2{
+    background-image: url('../src/assets/Images/deblurtImage.png');
+    background-size: cover;
+  }
+  .item3{
+    background-image: url('../src/assets/Images/denoisingImage.png');
+    background-size: cover;
+  }
+
+  
+  .image-container {
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    top: 54%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 4px #acacac dashed;
+  }
+  .image-container2 {
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    top: 54%;
+    left: 78%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 4px #acacac dashed;
+  }
+  .photo-image-class{
+  
+      max-width: 100%;
+      max-height: 100%;
+  }
+  /* .file-upload-section{
+    margin: auto;
+    font-weight: bolder;
+    width: 27%;
+    height: 44px;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    background-color: #0b6af6;
+    cursor: pointer;
+    left: -14.6rem;   
+     position: relative;
+    top: 26rem;
+    z-index: 33;
+  
+  } */
+  .custom-button {
+    margin: auto;
+    font-weight: bolder;
+    width: 27%;
+    height: 44px;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    background-color: #0b6af6;
+    cursor: pointer;
+    left: 10.6rem;
+    position: relative;
+    top: 25.8rem;
+    z-index: 33;
+  }
+  .upload-image {
+    margin: auto;
+    font-weight: bolder;
+    width: 27%;
+    height: 44px;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    background-color: #0b6af6;
+    cursor: pointer;
+    left: 10.6rem;
+    position: relative;
+    top: 26.8rem;
+    z-index: 33;
+  }
+  
+  #foto-file{
+      display: none;
+  }
+  
